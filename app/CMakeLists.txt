@@ -20,3 +20,18 @@ target_link_libraries(shell-app PUBLIC -static
   )
 
   
+add_executable(problem9_4
+  problem9_4.cpp
+  )
+
+target_include_directories(problem9_4 PUBLIC
+  ${CMAKE_SOURCE_DIR}/include
+)
+
+add_executable(problem9_5
+  problem9_5.cpp
+  )
+
+target_include_directories(problem9_5 PUBLIC
+  ${CMAKE_SOURCE_DIR}/include
+)
