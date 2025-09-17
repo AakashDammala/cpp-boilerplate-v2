@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(scratch)
+project(week3-problems9_4-9_5)
 
 #
 # GoogleTest Setup
