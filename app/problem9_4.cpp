@@ -11,9 +11,9 @@ the position of the beginning of a given string in a given text.
  *
  */
 void printPosition() {
-  char text[1024] = "1234567890";
+  const char text[1024] = "1234567890";
   int text_length = 10;
-  char array_to_search1[4] = "23";
+  const char array_to_search1[4] = "23";
   int array_to_search1_length = 2;
   int i, j;
   int position1 = -1;
@@ -40,8 +40,8 @@ void printPosition() {
  * @param array_to_search1_length Sub array length
  * @return int - Position of sub_array in array
  */
-int findPositionInString(char *text, const int text_length,
-                         char *array_to_search1,
+int findPositionInString(const char *text, const int text_length,
+                         const char *array_to_search1,
                          const int array_to_search1_length) {
 
   int i, j;
@@ -67,10 +67,10 @@ int findPositionInString(char *text, const int text_length,
  *
  */
 void printPositionRefactored() {
-  char text[1024] = "1234567890";
-  int text_length = 10;
-  char array_to_search1[4] = "23";
-  int array_to_search1_length = 2;
+  const char text[1024] = "1234567890";
+  const int text_length = 10;
+  const char array_to_search1[4] = "23";
+  const int array_to_search1_length = 2;
 
   int position1 = findPositionInString(text, text_length, array_to_search1,
                                        array_to_search1_length);
